@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FriendsController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Set the background
+        collectionView.backgroundColor = UIColor.red
+        
     }
 
 
