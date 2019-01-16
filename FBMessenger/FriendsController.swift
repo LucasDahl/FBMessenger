@@ -62,28 +62,48 @@ class FriendCell: BaseCell {
         // Set the content view
         imageView.contentMode = .scaleAspectFill
         
+        // Round th ecorners
+        imageView.layer.cornerRadius = 34
+        imageView.layer.masksToBounds = true
         
         return imageView
         
     }()
     
+    // Setup the dividerline
+    let dividerLineView: UIView = {
+        
+        // Setup the view
+        let view = UIView()
+        
+        // Set the color
+        view.backgroundColor = UIColor(white: 0.5, alpha: 0.5)
+        
+        return view
+        
+    }()
+    
+    
     override func setupViews() {
         
-        // Set the background color
-        backgroundColor = UIColor.blue
         
         // Add  the imageView
         addSubview(profileImageView)
+        addSubview(dividerLineView)
         
         // Set the image for the cells
         profileImageView.image = UIImage(named: "zuckprofile")
         
         // This is needed to use the auto-layout
         profileImageView.translatesAutoresizingMaskIntoConstraints = false
+        dividerLineView.translatesAutoresizingMaskIntoConstraints = false
         
         // Add the constraints
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0(68)]", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": profileImageView]))
-       addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0(68)]", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": profileImageView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[v0(68)]", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": profileImageView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-12-[v0(68)]", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": profileImageView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-82-[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": dividerLineView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:[v0(1)]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": dividerLineView]))
+        
         
     }
     
