@@ -16,6 +16,9 @@ class FriendsController: UICollectionViewController, UICollectionViewDelegateFlo
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Set the navBr title
+        navigationItem.title = "Recent"
+        
         // Set the background
         collectionView.backgroundColor = UIColor.white
         
