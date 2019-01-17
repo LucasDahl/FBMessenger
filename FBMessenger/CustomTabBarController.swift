@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Custom tabBar controller to use to make a tabBAr controller through code in the appDelegate.
 class CustomTabBarController: UITabBarController {
     
     override func viewDidLoad() {
