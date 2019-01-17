@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         // Set the window to a class
-
         window?.rootViewController = CustomTabBarController()
         
         return true
