@@ -20,15 +20,24 @@ class CustomTabBarController: UITabBarController {
         recentMessagesNavController.tabBarItem.title = "Recent"
         recentMessagesNavController.tabBarItem.image = UIImage(named: "recent")
         
-        // Dummy viewControllr
-        let viewController = UIViewController()
-        let navController = UINavigationController(rootViewController: viewController)
-        navController.tabBarItem.title = "Calls"
-        navController.tabBarItem.image = UIImage(named: "calls")
+
         
         // Setup all the controllers
-        viewControllers = [recentMessagesNavController, navController]
+        viewControllers = [recentMessagesNavController, createDummyNavControllerWithTitle(title: "Calls", imageName: "calls"), createDummyNavControllerWithTitle(title: "Groups", imageName: "groups"), createDummyNavControllerWithTitle(title: "People", imageName: "people"), createDummyNavControllerWithTitle(title: "Settings", imageName: "settings")]
         
     }
+    
+    // Convince method for making dummy viewControllerss
+    private func createDummyNavControllerWithTitle(title: String, imageName: String) -> UINavigationController {
+        
+        let viewController = UIViewController()
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.tabBarItem.title = title
+        navController.tabBarItem.image = UIImage(named: imageName)
+        
+        return navController
+        
+    }
+    
     
 }

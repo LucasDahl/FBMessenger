@@ -23,14 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Make the window visible
         window?.makeKeyAndVisible()
         
-        // Create the layout
-//        let layout = UICollectionViewFlowLayout()
-//
-//        // Create the rootViewController
-//        let friendsController = FriendsController(collectionViewLayout: layout)
-//
-//        // Set the window to a class
-//        window?.rootViewController = UINavigationController(rootViewController: friendsController)
+
+
+        // Set the window to a class
+
         window?.rootViewController = CustomTabBarController()
         
         return true
