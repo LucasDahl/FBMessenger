@@ -155,7 +155,6 @@ class FriendCell: BaseCell {
         
     }()
 
-    
     //================
     // MARK: - Methods
     //================
