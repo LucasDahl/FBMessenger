@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9535503D21F0217F00B7EDA1 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9535503C21F0217F00B7EDA1 /* CustomTabBarController.swift */; };
 		955EE1EF21EF797800D14B1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955EE1EE21EF797800D14B1F /* AppDelegate.swift */; };
 		955EE1F121EF797800D14B1F /* FriendsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955EE1F021EF797800D14B1F /* FriendsController.swift */; };
 		955EE1F721EF797800D14B1F /* FBMessenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 955EE1F521EF797800D14B1F /* FBMessenger.xcdatamodeld */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9535503C21F0217F00B7EDA1 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		955EE1EB21EF797800D14B1F /* FBMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		955EE1EE21EF797800D14B1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		955EE1F021EF797800D14B1F /* FriendsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				955EE1EE21EF797800D14B1F /* AppDelegate.swift */,
 				955EE1F021EF797800D14B1F /* FriendsController.swift */,
+				9535503C21F0217F00B7EDA1 /* CustomTabBarController.swift */,
 				955EE1F821EF797900D14B1F /* Assets.xcassets */,
 				955EE1FA21EF797900D14B1F /* LaunchScreen.storyboard */,
 				955EE1FD21EF797900D14B1F /* Info.plist */,
@@ -136,6 +139,7 @@
 			files = (
 				955EE1F121EF797800D14B1F /* FriendsController.swift in Sources */,
 				955EE1EF21EF797800D14B1F /* AppDelegate.swift in Sources */,
+				9535503D21F0217F00B7EDA1 /* CustomTabBarController.swift in Sources */,
 				955EE1F721EF797800D14B1F /* FBMessenger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
